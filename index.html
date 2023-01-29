@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator
+    </title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="">
+
+    <div class="mx-auto mt-10 w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <form class="space-y-6" method="POST">
+            <h5 class="text-xl text-center font-medium text-gray-900 dark:text-white">Tip Calculator</h5>
+            <div>
+                <label for="bill" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Total Bill $</label>
+                <input type="number" step="any" name="bill" id="bill" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="enter a number" required>
+            </div>
+            <div>
+                <label for="tip" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tip %</label>
+                <input type="number" step="any" name="tip" id="tip" placeholder="enter a number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+            </div>
+            <div>
+                <label for="people" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Number of People</label>
+                <input type="number" name="people" id="people" placeholder="enter a number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+            </div>
+            <input type="submit" name= "form" value="Calculate" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></input> 
+        </form>
+        <br>
+        <div class="text-center items-baseline text-gray-900 dark:text-white">
+            <span class="text-3xl font-semibold">$</span>
+            <span class="text-3xl font-extrabold tracking-tight">{{result}}</span>
+            <span class="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/person</span>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+</body>
+</html>
