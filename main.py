@@ -12,10 +12,10 @@ def calculate():
         bill = request.form['bill']
         tip = request.form['tip']
         people = request.form['people']
-        print(f'Tip: {tip}')
         tip_total = float(bill) * float(tip) / 100
         result = round((float(bill)+tip_total)/float(people), 2)
-        return render_template('index.html', result = result)
+        total = round(float(bill) + tip_total, 2)
+        return render_template('index.html', result = result, total = total)
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0', port = 3000)
